@@ -1,0 +1,31 @@
+﻿<Window x:Class="EkzamEgorovN.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EkzamEgorovN"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas>
+        <TextBlock Text="Введите обьем топлива" Canvas.Left="82" Canvas.Top="10" />
+        <TextBox Name="ob" Height="35" Width="251" Canvas.Left="32" Canvas.Top="30" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <TextBlock Text="Введите плотность топлива" Canvas.Left="398" Canvas.Top="9" />
+        <TextBox Name="plot" Height="35" Width="251" Canvas.Left="348" Canvas.Top="30" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Label Name="lbOtv" Canvas.Left="32" Canvas.Top="302" Height="109" Width="400" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+        <Button x:Name="ms" Click="ms_Click" Content="Вывести массу топлива" RenderTransformOrigin="1.347,10.933" Canvas.Left="633" Canvas.Top="33" Height="28" Width="117"/>
+
+        <TextBox Name="HranOb" Height="35" Width="251" Canvas.Left="22" Canvas.Top="128" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox Name="TecZapas" Height="35" Width="251" Canvas.Left="348" Canvas.Top="128" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Введите хранимый обьем" Canvas.Left="70" Canvas.Top="107" />
+        <TextBlock Text="Введите текущий запас топлива" Canvas.Left="386" Canvas.Top="107" />
+
+        <TextBlock Text="Взять топливо с хранилища" Canvas.Left="386" Canvas.Top="175" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <TextBox Name="Vzac" Height="35" Width="251" Canvas.Left="348" Canvas.Top="200" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Button x:Name="vzac" Click="vzac_Click" Content="Взять топливо с хранилища" Height="26" Width="172" Canvas.Left="618" Canvas.Top="204" HorizontalAlignment="Left" VerticalAlignment="Center" />
+
+        <TextBlock Text="Заправить топливо" Canvas.Left="398" Canvas.Top="240" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox Name="Zap" Height="35" Width="251" Canvas.Left="337" Canvas.Top="262" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Button x:Name="zap" Click="zap_Click" Content="Запрвить" Height="26" Width="172" Canvas.Left="618" Canvas.Top="262" HorizontalAlignment="Center" VerticalAlignment="Top" />
+    </Canvas>
+</Window>
